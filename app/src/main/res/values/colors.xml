@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#455A64</color>
+    <color name="colorPrimaryDark">#263238</color>
+    <color name="colorAccent">#c44569</color>
+    <color name="colorPrimaryLight">#ffffff</color>
+    <color name="colorTextPrimary">@android:color/black</color>
+    <color name="colorButtonTextPrimary">@android:color/white</color>
+    <color name="colorScreenBackground">#dfe4ea</color>
+    <color name="colorTextHint">#E0E0E0</color>
+    <color name="upcoming">#2e86de</color>
+    <color name="overdue">#ee5253</color>
+</resources>

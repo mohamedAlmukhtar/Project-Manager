@@ -1,0 +1,149 @@
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe"
+    app:leftEdgeSwipeOffset="0dp"
+    app:rightEdgeSwipeOffset="0dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_wraper"
+        android:layout_width="180dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/Edit"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0076a5"
+            android:gravity="center"
+            android:src="@drawable/ic_edit"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:textColor="#fff"/>
+
+        <ImageButton
+            android:id="@+id/Delete"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#d63031"
+            android:gravity="center"
+            android:src="@drawable/ic_delete"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper1"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageButton
+            android:id="@+id/progress_setter1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#a5b1c2"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/ic_checkmark_setter"/>
+
+        <ImageButton
+            android:id="@+id/progress_setter2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#09997D"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/ic_checkmark_setter"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/task_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_textview"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/task_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="20dp"
+            android:maxHeight="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_checkmark_incomplete" />
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginBottom="5dp"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_dueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_title"
+            android:layout_alignStart="@+id/task_title"
+            android:layout_alignLeft="@+id/task_title"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="Feb 13th 2019 - Feb 23d 2019"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#b2bec3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/task_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/task_dueDate"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@+id/task_dueDate"
+            android:layout_toRightOf="@+id/task_dueDate"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="high"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>
